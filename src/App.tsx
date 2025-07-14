@@ -7,6 +7,9 @@ import { Layout } from "./components/Layout";
 import Index from "./pages/Index";
 import Patients from "./pages/Patients";
 import Referrals from "./pages/Referrals";
+import BedManagement from "./pages/BedManagement";
+import Reports from "./pages/Reports";
+import Appointments from "./pages/Appointments";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -22,9 +25,9 @@ const App = () => (
             <Route index element={<Index />} />
             <Route path="patients" element={<Patients />} />
             <Route path="referrals" element={<Referrals />} />
-            <Route path="beds" element={<div className="p-8 text-center text-muted-foreground">Bed Management - Coming Soon</div>} />
-            <Route path="reports" element={<div className="p-8 text-center text-muted-foreground">Reports - Coming Soon</div>} />
-            <Route path="appointments" element={<div className="p-8 text-center text-muted-foreground">Appointments - Coming Soon</div>} />
+            <Route path="beds" element={<BedManagement />} />
+            <Route path="reports" element={<Reports />} />
+            <Route path="appointments" element={<Appointments />} />
             <Route path="pharmacy" element={<div className="p-8 text-center text-muted-foreground">Pharmacy - Coming Soon</div>} />
             <Route path="vitals" element={<div className="p-8 text-center text-muted-foreground">Vitals - Coming Soon</div>} />
           </Route>
