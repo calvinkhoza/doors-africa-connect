@@ -267,7 +267,7 @@ const Reports = () => {
       status: 'processing',
       size: 'Generating...',
       description: reportTemplates.find(t => t.id === reportData.reportType)?.description || 'Custom generated report',
-      metrics: { processing: true }
+      metrics: { beds: 0, occupancy: '0%', available: 0, processing: true }
     };
     
     setReports([newReport, ...reports]);
